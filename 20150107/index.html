@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    </head>
+<body>
+    <button id="myButton1" class="myButtons"></button>
+    <button id="myButton2" class="myButtons"></button>
+    <button id="myButton3" class="myButtons"></button>
+    
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>
+        $(function(){
+            $(".myButtons").each(function(index, button){
+                //thisには、それぞれのボタンが順番に入る。this = button
+                $(button).text( "ボタン" + (index + 1) );
+            });
+
+            var buttonDefault;
+            $(".myButtons").on("click",function(){
+                $(this).text("クリックされました");
+            });
+            $(".myButtons").on("mouseover",function(){
+                if(!buttonDefault) buttonDefault = $(this).css("background");
+                $(this).css({background:"red"});
+            });
+            $(".myButtons").on("mouseout",function(){
+                $(this).css({background:buttonDefault});
+            });
+            
+        });
+    </script>
+</body>
+</html>
