@@ -7,12 +7,14 @@ This repository is a place for material of subsemi.
 ##SSH
 gitコマンドを使ってダウンロードできます
 
-###始めてダウンロードされる方はこちら
+###Initialize
+始めてダウンロードされる方はこちら
 ```sh
 $ git clone git@github.com:IMELab/subsemi.git
 ```
 
-###前に一度ダウンロードした方はこちら
+###Update
+前に一度ダウンロードした方はこちら
 ```sh
 $ cd path/to/downloaded/directory
 $ git pull origin master
