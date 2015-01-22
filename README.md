@@ -1,6 +1,24 @@
 #About
 This repository is a place for material of subsemi.  
 サブゼミで使った資料などを置いていくリポジトリです。
+
+#Download
+
+##Initialize
+始めてダウンロードされる方はこちら
+```sh
+$ git clone git@github.com:IMELab/subsemi.git
+```
+
+##Update
+前に一度ダウンロードした方はこちら
+```sh
+$ cd path/to/downloaded/directory
+$ git pull origin master
+```
+##ZIP
+[zipでもダウンロードできます]("/IMELab/subsemi/archive/master.zip")
+
 #Contents and References
 * 20150107（加藤）
     * Webブラウザ上における、javascriptプログラミングの基本事項
