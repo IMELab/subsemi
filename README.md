@@ -1,7 +1,7 @@
 #About
 This repository is a place for material of subsemi.  
 サブゼミで使った資料などを置いていくリポジトリです。
-#Contents
+#Contents and References
 * 20150107（加藤）
     * Webブラウザ上における、javascriptプログラミングの基本事項
         * [MDN::データ構造](https://developer.mozilla.org/ja/docs/Web/JavaScript/Data_structures)
