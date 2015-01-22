@@ -30,7 +30,9 @@
                     }
                 },
                 delete:function(e){
-                    document.querySelector("#myPosts").removeChild(document.querySelector("#" + this.id));
+                    if(window.confirm("本当に削除しますか？")){
+                        document.querySelector("#myPosts").removeChild(document.querySelector("#" + this.id));   
+                    }
                 }
             }
             
@@ -38,7 +40,7 @@
                 //PostDataを雛形にして、newPostDataを作る
                 var newPostData = Object.create(PostData,{
                     id:{
-                        value:"post" + postCounter;
+                        value:"post" + postCounter
                     }
                 });
                 
