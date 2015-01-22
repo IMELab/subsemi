@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>20150122サブゼミ</title>
+    </head>
+    <body>
+        <style>
+            #ta{
+                width:500px;
+            }
+        </style>
+        <h2>投稿リスト</h2>
+        <ul id="myPosts">
+            
+        </ul>
+        <textarea id="ta" placeholder="ここに文章を入力してください"></textarea>
+        <button id="post">
+            投稿
+        </button>
+        <script>
+            var postCounter = 0;
+            var PostData = {
+                id:"",
+                edit:function(e){
+                    var currentContent = document.querySelector("#" + this.id + " p").innerHTML;
+                    var editedContent = window.prompt("記事を編集します", currentContent);
+                    if(editedContent){
+                        document.querySelector("#" + this.id + " p").innerHTML = editedContent;
+                    }
+                },
+                delete:function(e){
+                    document.querySelector("#myPosts").removeChild(document.querySelector("#" + this.id));
+                }
+            }
+            
+            document.querySelector("#post").addEventListener("click",function(e){
+                //PostDataを雛形にして、newPostDataを作る
+                var newPostData = Object.create(PostData,{
+                    id:{
+                        value:"post" + postCounter;
+                    }
+                });
+                
+                postCounter++;
+                
+                var newPost = document.createElement("li");
+                var postContent = document.createElement("p");
+                var editButton = document.createElement("button");
+                var deleteButton = document.createElement("button");
+                
+                postContent.innerHTML = document.querySelector("#ta").value;
+                //編集ボタンをつくる
+                editButton.innerHTML = "編集";
+                editButton.addEventListener("click", newPostData.edit.bind(newPostData));
+                //削除ボタンをつくる
+                deleteButton.innerHTML = "削除";
+                deleteButton.addEventListener("click", newPostData.delete.bind(newPostData));
+                
+                newPost.id = newPostData.id;
+                newPost.appendChild(postContent);
+                newPost.appendChild(editButton);
+                newPost.appendChild(deleteButton);
+                
+                document.querySelector("#myPosts").appendChild(newPost);
+                document.querySelector("#ta").value = "";
+            });
+        </script>
+    </body>
+</html>
