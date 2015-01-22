@@ -20,7 +20,7 @@ $ cd path/to/downloaded/directory
 $ git pull origin master
 ```
 ##ZIP
-[zipでもダウンロードできます]("/IMELab/subsemi/archive/master.zip")
+zipでもダウンロードできます
 
 #Contents and References
 * 20150107（加藤）
