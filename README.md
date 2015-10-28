@@ -39,4 +39,9 @@ zipでもダウンロードできます
         * [MDN::関数と関数のスコープ](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions_and_function_scope)
     * プロトタイプ・ベースのオブジェクト指向について
         * [MDN::Object.create](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
-        * [MDN::this](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/this)
+
+* 20151029（加藤）
+    * 機械学習実践入門
+        * [Scikit-learn](http://scikit-learn.org/stable/index.html)
+        * [Chainer](http://docs.chainer.org/en/stable/)
+        * [機械学習 -- 朱鷺の杜wiki](http://ibisforest.org/index.php?%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92)
