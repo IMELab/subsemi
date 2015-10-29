@@ -122,3 +122,14 @@ Session.vim
 *~
 
 
+### https://raw.github.com/github/gitignore/1ee8dd15d6aa5adbdd7f575143c6be4dc5dea56b/Global/VirtualEnv.gitignore
+
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ss]cripts
+
+
